@@ -114,7 +114,7 @@
     font-size: 15px;
     display: flex;
     justify-content: start;
-    align-items: end;
+    align-items: start;
   }
 }
 
