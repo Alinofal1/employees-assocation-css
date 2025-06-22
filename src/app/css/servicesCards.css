@@ -55,25 +55,24 @@
     border-radius: 30px;
   }
   #cardContent img {
-    width: 122px;
+    width: 112px;
     height: 100%;
   }
 
   #cardText {
     width: 373px;
     text-align: right;
-    margin-bottom: 30px;
   }
   #cardText h1 {
     font-weight: 600;
     font-size: 15px;
-    margin: 0 20px;
+    margin: 0 30px;
   }
   #cardText p {
     padding: 20px;
     text-align: center;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
