@@ -72,12 +72,16 @@
 }
 
 .pal-service2 {
-  width: 477px;
+  width: 100%;
+  max-width: 477px;
   font-weight: 500;
   font-size: 23px;
+  text-align: end;
+  direction: ltr;
+  margin: 0 auto;
 }
 
-/* Mobile View */
+/*  Mobile View  */
 @media (max-width: 767px) {
   #carSlider {
     display: none;
@@ -134,7 +138,7 @@
     width: 100%;
     max-width: 346px;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 156%;
     text-align: center;
     margin: 0;
@@ -154,78 +158,90 @@
 
   .pal-service2 {
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
     margin: 0 auto;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
     text-align: center;
   }
 }
 
-/* Tablet screen */
+/*  Tablet screen  */
 @media (min-width: 768px) and (max-width: 1024px) {
   #carCard {
-    width: 800px;
-    height: 340px;
+    width: 700px;
+    height: auto;
     display: flex;
     justify-content: center;
     margin: auto;
     margin-top: 30px;
-  }
-  #carContent {
-    width: 750px;
-    margin: 44px auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  #carSlider {
-    width: 30px;
-    gap: 7px;
-    margin-right: 20px;
-    margin-left: 20px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: linear-gradient(to right, #676767, #ffffff, #f2f2f2);
+    box-sizing: border-box;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  #carSlider div {
-    width: 25px;
-    height: 25px;
+  #carContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #carSlider {
+    display: none;
   }
 
   #image-wrapper {
-    width: 335px;
-    height: 220px;
+    width: 315px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   #car-background {
-    width: 100%;
+    display: none;
   }
 
   #image-wrapper img {
-    top: 25px;
+    top: 0;
+    width: 100%;
+    position: relative;
   }
 
   #carText {
-    width: 286px;
-    font-weight: 600;
-    font-size: 15px;
+    width: 100%;
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    word-break: break-word;
   }
 
   #pal-service {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
-    margin-bottom: 33px;
+    color: #656565;
+    margin-top: 10px;
+    margin-bottom: 25px;
   }
 
   .pal-service2 {
-    width: 377px;
-    font-weight: 400;
+    width: 100%;
+    font-weight: 500;
     font-size: 15px;
+    text-align: center;
   }
 }
 
-/* Small laptop screen */
+/*  Small laptop screen  */
 @media (min-width: 1025px) and (max-width: 1280px) {
   #carCard {
     width: 1000px;
@@ -233,10 +249,13 @@
     margin: auto;
     margin-top: 30px;
   }
+
   #carContent {
     width: 950px;
   }
+
   #carSlider {
+    display: flex;
     width: 35px;
     margin-right: 1px;
     margin-left: 20px;
