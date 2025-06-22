@@ -2,13 +2,23 @@ footer {
   box-shadow: 0 -4px 20px 0 #5555550d;
   margin-top: 54px;
   box-shadow: inset #1111111a;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 #listWrapper {
-  width: 1920px;
   max-width: 1350px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 #footerList {
@@ -55,6 +65,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 #footerBottom p {
@@ -89,7 +101,6 @@ footer {
 /* Mobile View */
 @media (max-width: 767px) {
   #footerList {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -103,12 +114,14 @@ footer {
     font-size: 20px;
     line-height: 156%;
   }
+
   #footerBottom {
     width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    padding: 0;
   }
 
   #footerBottom p {
@@ -124,6 +137,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    padding: 0;
   }
 
   #footerBottom p {
@@ -138,5 +152,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 0 15px;
   }
 }

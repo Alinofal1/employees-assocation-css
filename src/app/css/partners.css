@@ -3,6 +3,8 @@
   width: 100%;
   margin: auto;
   margin-top: 45px;
+  padding: 0 20px; /* padding for mobile spacing */
+  box-sizing: border-box;
 }
 
 .ServicesHead h1 span {

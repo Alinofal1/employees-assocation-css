@@ -98,16 +98,27 @@ nav {
   height: 81px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Mobile Header */
 @media (max-width: 767px) {
   #navList {
     display: none;
   }
-  .header-wrapper {
-    margin: auto;
-    gap: 120px;
+  .navContainer {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
   }
-
+  .header-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
   #leftBtn {
     width: 130px;
     border: 1px solid #4da05b;
@@ -116,22 +127,21 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 4px;
+    flex-shrink: 0;
   }
-
   #leftBtn p {
     font-weight: 700;
     font-size: 15px;
     text-align: center;
     margin-left: 4px;
   }
-
   #leftBtn img {
     width: 50px;
     margin: 8px 0;
   }
   #logo {
-    width: 130px;
-    height: 130px;
+    max-width: 150px;
+    height: auto;
   }
 }
 
