@@ -61,3 +61,22 @@ export const icons = [
     svg: "/tiktok.svg",
   },
 ];
+
+export const sliderImages = [
+  {
+    id: 1,
+    img: "/sliderImage2.png",
+  },
+  {
+    id: 2,
+    img: "/cardsImg.png",
+  },
+  {
+    id: 3,
+    img: "/heroImg.jpg",
+  },
+  {
+    id: 4,
+    img: "/sliderImage.png",
+  },
+];
