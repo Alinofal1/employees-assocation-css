@@ -86,7 +86,7 @@
   .newsCardsContent {
     text-align: end;
     border: 0.5px solid rgba(140, 140, 140, 0.25);
-    width: 400px;
+    width: 90vw;
     padding: 18px;
     gap: 10px;
     margin: 0;
@@ -95,6 +95,26 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+  }
+  .newsCardText {
+    width: 272px;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  .newsCardText h1 {
+    text-align: end;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px auto;
+  }
+  .newsPara span {
+    color: #4da05b;
+    font-weight: 300;
+    font-size: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
   }
 }
 
