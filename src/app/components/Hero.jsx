@@ -1,6 +1,5 @@
 "use client";
 import { CiCircleChevUp, CiCircleChevDown } from "react-icons/ci";
-import { sliderImages } from "../data";
 import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
