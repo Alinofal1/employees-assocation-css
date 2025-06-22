@@ -16,31 +16,6 @@
   box-sizing: border-box;
 }
 
-/* Mobile: 1 card */
-@media (max-width: 767px) {
-  #newsCards {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Tablet: 2 cards */
-@media (min-width: 768px) and (max-width: 1024px) {
-  #newsCards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  #newsCards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* Large screens: 3 cards */
-@media (min-width: 1281px) {
-  #newsCards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .newsCardsContent {
   text-align: end;
   border: 0.5px solid rgba(140, 140, 140, 0.25);
@@ -99,4 +74,30 @@
   width: 349px;
   display: inline-block;
   word-break: break-word;
+}
+
+/* Mobile: 1 card */
+@media (max-width: 767px) {
+  #newsCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet: 2 cards */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #newsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #newsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Large screens: 3 cards */
+@media (min-width: 1281px) {
+  #newsCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
