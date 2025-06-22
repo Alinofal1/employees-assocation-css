@@ -61,6 +61,7 @@ nav {
   justify-content: center;
   margin-right: 43px;
 }
+
 #searchLogo:hover {
   cursor: pointer;
   background-color: #a9212a;
@@ -101,6 +102,14 @@ nav {
 body {
   overflow-x: hidden;
 }
+/* Responsive */
+.mobileSideBar {
+  display: none;
+}
+
+.openClose:hover {
+  cursor: pointer;
+}
 
 /* Mobile Header */
 @media (max-width: 767px) {
@@ -108,17 +117,76 @@ body {
     display: none;
   }
   .navContainer {
-    padding: 0 20px;
-    width: 100%;
-    max-width: 100%;
-    justify-content: center;
+    display: none;
   }
+  .mobileSideBar {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    margin: 0 auto;
+  }
+  .side {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .mobileList {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 600px;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    margin: 100px auto;
+    padding: 20px;
+  }
+
+  .mobileList li {
+    margin: 40px auto;
+    text-align: center;
+  }
+  .mobileList li:hover {
+    color: #be2631;
+    transition-duration: 300ms;
+  }
+
+  .mobileList li {
+    display: block;
+  }
+  .sideImg {
+    width: 150px;
+    border: 1px solid #4da05b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sideImg:hover {
+    cursor: pointer;
+  }
+  .sideImg p {
+    width: 46px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .sideSvg {
+    width: 25px;
+    margin: 8px 0;
+  }
+
   .header-wrapper {
     width: 100%;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
+
   #leftBtn {
     width: 130px;
     border: 1px solid #4da05b;
@@ -145,7 +213,7 @@ body {
   }
 }
 
-/* Tablet  view*/
+/* Tablet view */
 @media (min-width: 768px) and (max-width: 1024px) {
   #navList {
     display: none;
@@ -153,6 +221,72 @@ body {
   .header-wrapper {
     margin: auto;
     gap: 170px;
+  }
+  /* tablet list */
+  .side {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .mobileList {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 600px;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    margin: 100px auto;
+    padding: 20px;
+  }
+
+  .mobileList li {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 17px;
+  }
+  .mobileList li:hover {
+    color: #be2631;
+    transition-duration: 300ms;
+  }
+
+  .mobileList li {
+    display: block;
+  }
+  .sideImg {
+    width: 150px;
+    border: 1px solid #4da05b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sideImg:hover {
+    cursor: pointer;
+  }
+  .sideImg p {
+    width: 46px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .sideSvg {
+    width: 25px;
+    margin: 8px 0;
+  }
+  .navContainer {
+    display: none;
+  }
+
+  .mobileSideBar {
+    display: flex;
+    align-items: center;
+    gap: 600px;
+    margin: 0 auto;
   }
 
   #leftBtn {
@@ -182,7 +316,7 @@ body {
   }
 }
 
-/* small laptop  view*/
+/* Small laptop view */
 @media (min-width: 1025px) and (max-width: 1280px) {
   nav {
     height: 128px;

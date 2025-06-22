@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileNavBar from "./MobileNavBar";
 
 export default function Navbar() {
   return (
@@ -29,6 +30,13 @@ export default function Navbar() {
             <img src="/logo.svg" alt="logo" id="logo" />
           </Link>
         </div>
+      </div>
+      {/* Mobile SideBar */}
+      <div className="mobileSideBar">
+        <MobileNavBar />
+        <Link href={"/"}>
+          <img src="/logo.svg" alt="logo" id="logo" />
+        </Link>
       </div>
     </nav>
   );
