@@ -46,7 +46,7 @@
     align-items: center;
   }
   #cardContent {
-    width: 400px;
+    width: 380px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -58,13 +58,21 @@
     width: 122px;
     height: 100%;
   }
+
   #cardText {
+    width: 373px;
     text-align: right;
     margin-bottom: 30px;
   }
-  #cardText p {
-    font-weight: 300;
+  #cardText h1 {
+    font-weight: 600;
     font-size: 15px;
+    margin: 0 10px;
+  }
+  #cardText p {
+    padding: 10px;
+    font-weight: 300;
+    font-size: 13px;
   }
 }
 

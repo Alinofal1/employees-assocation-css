@@ -125,22 +125,26 @@ body {
     gap: 200px;
     margin: 0 auto;
   }
-  .side {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
   }
 
   .mobileList {
     position: fixed;
     z-index: 10;
     width: 100vw;
-    height: 600px;
+    height: 100vh;
     background-color: #ffffff;
     left: 0;
     top: 0;
-    margin: 100px auto;
+    margin: auto;
     padding: 20px;
+  }
+  .side {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 
   .mobileList li {
@@ -223,6 +227,11 @@ body {
     gap: 170px;
   }
   /* tablet list */
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+
   .side {
     display: flex;
     flex-direction: row;
@@ -233,11 +242,11 @@ body {
     position: fixed;
     z-index: 10;
     width: 100vw;
-    height: 600px;
+    height: 100vh;
     background-color: #ffffff;
     left: 0;
     top: 0;
-    margin: 100px auto;
+    margin: auto;
     padding: 20px;
   }
 

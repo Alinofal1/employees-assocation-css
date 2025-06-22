@@ -1,10 +1,18 @@
 "use client";
 import { RiMenu2Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function MobileNavBar() {
   const [isOpen, setIsOpen] = useState(true);
+
+  useEffect(() => {
+    if (!isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isOpen]);
   console.log(isOpen);
   return (
     <div onClick={() => setIsOpen(!isOpen)} className="openClose">
