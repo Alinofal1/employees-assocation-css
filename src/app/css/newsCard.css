@@ -118,7 +118,23 @@
 /* Tablet: 2 cards */
 @media (min-width: 768px) and (max-width: 1024px) {
   #newsCards {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .newsCardsContent {
+    width: 430px; /* خليها زي ما هي */
+    box-sizing: border-box;
+  }
+
+  .newsCardText {
+    width: 100%;
+    max-width: 372px;
+    margin: auto;
   }
 }
 
