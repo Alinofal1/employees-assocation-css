@@ -1,0 +1,267 @@
+nav {
+  width: 100%;
+  height: 138px;
+  background-color: #ffffff;
+  display: flex;
+  justify-items: center;
+}
+
+.navContainer {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#leftBtn {
+  width: 186px;
+  border: 1px solid #4da05b;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+#leftBtn:hover {
+  cursor: pointer;
+}
+
+#leftBtn p {
+  width: 76px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+#leftBtn img {
+  width: 45px;
+  margin: 8px 0;
+}
+
+#navList {
+  display: flex;
+  align-items: center;
+  margin: 0 86.5px;
+}
+
+#searchLogo {
+  background-color: #be2631;
+  border-radius: 41px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 43px;
+}
+#searchLogo:hover {
+  cursor: pointer;
+  background-color: #a9212a;
+}
+
+#searchLogo img {
+  width: 21.49px;
+  height: 21.08px;
+  top: 12.5px;
+  left: 13.5px;
+}
+
+#navList ul {
+  width: 752px;
+  display: flex;
+  gap: 43px;
+}
+
+#navList ul li {
+  display: block;
+  padding: 3.5px 0;
+  font-weight: 700;
+  font-size: 20px;
+  margin: auto;
+}
+
+#navList ul li:hover {
+  color: #be2631;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+#logo {
+  width: 148px;
+  height: 81px;
+}
+
+/* Mobile Header */
+@media (max-width: 767px) {
+  #navList {
+    display: none;
+  }
+  .header-wrapper {
+    margin: auto;
+    gap: 120px;
+  }
+
+  #leftBtn {
+    width: 130px;
+    border: 1px solid #4da05b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  #leftBtn p {
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 4px;
+  }
+
+  #leftBtn img {
+    width: 50px;
+    margin: 8px 0;
+  }
+  #logo {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Tablet  view*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  #navList {
+    display: none;
+  }
+  .header-wrapper {
+    margin: auto;
+    gap: 170px;
+  }
+
+  #leftBtn {
+    width: 170px;
+    border: 1px solid #4da05b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  #leftBtn p {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 4px;
+  }
+
+  #leftBtn img {
+    width: 50px;
+    margin: 8px 0;
+  }
+  #logo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* small laptop  view*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  nav {
+    height: 128px;
+    background-color: #ffffff;
+    display: flex;
+    justify-items: center;
+  }
+
+  .navContainer {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #leftBtn {
+    width: 156px;
+    border: 1px solid #4da05b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  #leftBtn p {
+    width: 56px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #leftBtn img {
+    width: 35px;
+    margin: 8px 0;
+  }
+
+  #navList {
+    display: flex;
+    align-items: center;
+    margin: 0 86.5px;
+  }
+
+  #searchLogo {
+    background-color: #be2631;
+    border-radius: 41px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+  }
+
+  #searchLogo img {
+    width: 15px;
+    height: 15px;
+    top: 8.5px;
+    left: 8.5px;
+  }
+
+  #navList ul {
+    width: 552px;
+    display: flex;
+    gap: 30px;
+  }
+
+  #navList ul li {
+    padding: 3.5px 0;
+    font-weight: 600;
+    font-size: 15px;
+    margin: auto;
+  }
+
+  #navList ul li:hover {
+    color: #be2631;
+    transition-duration: 300ms;
+    cursor: pointer;
+  }
+
+  #logo {
+    width: 130px;
+    height: 61px;
+  }
+}
